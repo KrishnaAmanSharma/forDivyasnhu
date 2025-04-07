@@ -1,13 +1,32 @@
 {
   "project_info": {
-    "project_number": "804538035628",
-    "project_id": "travelcompanionapp-c8ed7",
-    "storage_bucket": "travelcompanionapp-c8ed7.firebasestorage.app"
+    "project_number": "213494177623",
+    "project_id": "travel-buddy-43bb4",
+    "storage_bucket": "travel-buddy-43bb4.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:804538035628:android:543515d86f4a4de3bf5e09",
+        "mobilesdk_app_id": "1:213494177623:android:0840f842b8ce257873e812",
+        "android_client_info": {
+          "package_name": "com.example.travelbuddyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZWInMT5o0qFKUqPS5gvXJyAqpTETvmJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213494177623:android:e40e6616d10ec6b573e812",
         "android_client_info": {
           "package_name": "com.example.travelcompanionfinder"
         }
@@ -15,7 +34,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBsZmoIHVyTTrS56RfUy5Etb3SFjeqVKOk"
+          "current_key": "AIzaSyAZWInMT5o0qFKUqPS5gvXJyAqpTETvmJk"
         }
       ],
       "services": {

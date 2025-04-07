@@ -75,6 +75,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
               .set({
             'email': user.email,
             'createdAt': FieldValue.serverTimestamp(),
+            'isActive': false,
+            'profilePic': null,
+            'name': 'please update',
+            'bio': 'please update',
+            'phone': 'please update',
+            'interest': 'please update',
+            'latitude': null,
+            'longitude': null,
+            'lastLocationUpdate': null,
+
           });
 
           setState(() {
@@ -504,6 +514,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           const SnackBar(
                               content: Text("Profile updated successfully!")),
                         );
+                        _fetchUserData();
                       }
                     } catch (e) {
                       ScaffoldMessenger.of(context).showSnackBar(

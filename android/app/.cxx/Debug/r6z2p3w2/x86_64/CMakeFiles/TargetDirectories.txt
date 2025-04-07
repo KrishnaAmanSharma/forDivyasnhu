@@ -1,0 +1,2 @@
+D:/flutter/travelcompanionapp/android/app/.cxx/Debug/r6z2p3w2/x86_64/CMakeFiles/edit_cache.dir
+D:/flutter/travelcompanionapp/android/app/.cxx/Debug/r6z2p3w2/x86_64/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
@@ -36,6 +37,26 @@ class _RegisterScreenState extends State<RegisterScreen> {
         email: _emailController.text.trim(),
         password: _passwordController.text.trim(),
       );
+
+       // Create a basic user document if it doesn't exist
+          await FirebaseFirestore.instance
+              .collection('users')
+              .doc(_auth.currentUser?.uid)
+              .set({
+            'email': _emailController.text.trim(),
+            'name': _nameController.text.trim(),
+            'createdAt': FieldValue.serverTimestamp(),
+            'isActive': false,
+            'profilePic': null,
+            'name': 'please update',
+            'bio': 'please update',
+            'phone': 'please update',
+            'interest': 'please update',
+            'latitude': null,
+            'longitude': null,
+            'lastLocationUpdate': null,
+
+          });
       // Optionally update user profile with name
       // await _auth.currentUser?.updateDisplayName(_nameController.text.trim());
 
